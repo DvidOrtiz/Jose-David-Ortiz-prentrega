@@ -4,66 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/588c73e4a8.js" crossorigin="anonymous"></script>
-    <title>Contactanos</title>
+
 </head>
-<header>
-    <img src="../assets/img/Logo.png" alt="">
-    <nav>
-        <i class="fa-solid fa-bars"></i>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="../pages/contactanos.html">Contactanos</a></li>
-        </ul>
-    </nav>    
-</header> 
+<body>
+  
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 68, 255); ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/img/Logo.png" alt="" style="height: 50px;">
+          </a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link text-white" href="./productos.html">Productos</a>
+              <a class="nav-link text-white" href="./sobre-nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link text-white" href="./contactanos.html">Contactanos</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     <main>
+    <div class="container mt-5 border mb-3" style="width: 100%; ">
+          <form class="row" style="background-color: #ffffff;">
+            <div class="p-3 text-white" style="background-color:rgb(0, 68, 255) ;">Contactanos</div>
+            <div class="col-md-12 col-lg-12 p-3">
+                <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+            <div class="col-md-12 col-lg-6 p-3">
+                <label for="exampleFormControlInput1" class="form-label">Tu Numero</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="351XXXXXXX">
+              </div>
+              <div class=" col-md-12 col-lg-6 p-3">
+                <label for="exampleFormControlInput2" class="form-label">Tu Email</label>
+                <input type="numero" class="form-control" id="exampleFormControlInput2" placeholder="correo@ejemplo.com">
+              </div>
+              <div class=" col-md-12 col-lg-12 p-3">
+                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+              </div>
+              <div class="col-md-12 col-lg-12 mb-4 p-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+    </div> 
+</main>  
+<footer class="text-center text-white mt-5" style="background-color: rgb(0, 68, 255);">
+  <div class="container p-4">
+    <section class="mb-5">
 
-        <section class="formulario">
-            
-            <h2>Contactanos</h2>
-    
-         <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i></a>
 
-            <label for="correo">correo</label>
-            <input type="email" name="correo">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i></a>
 
-            <label for="numero">Numero de Telefono</label>
-            <input type="number" name="numero">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i></a>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
-        <button>enviar</button>
-        </form>
-        </section>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i></a>
+    </section>
+    <section class="">
+      <form action="">
 
-    </main>
-    <footer>
-        <div class="nuestras-redes">
-           <h4 class="footer-h4">Nuestras Redes</h4>
-           <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-           <a href=""><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="consultas">
-           <h4 class="footer-h4">Consultas</h4>
-           <ul>
-               <li><a href="">Atencion al Cliente</a></li>
-               <li><a href="">Nuestras Redes</a></li>
-           </ul>
-        </div>
-        <div class="mediosdepago">
-           <h4 class="footer-h4">Medios de Pago</h4>
-           <img src="../assets/img/pagos-pcom.png" alt="Medios de Pago">
-        </div>
-    
-   </footer>
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Suscribete a Nuestro Newsletter</strong>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-12">
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+
+          <div class="col-auto">
+
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+      </form>
+</footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
