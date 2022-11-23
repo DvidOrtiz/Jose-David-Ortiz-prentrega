@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: aliceblue;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90px;
+    background-color: rgb(0, 126, 245);
+    box-shadow: 0px 5px 25px -13px black;
+    z-index: 2;
+}
+
+header img{
+    margin-left: 15px;
+    height: 80%;
+}
+.fa-bars{
+    margin: 40px;
+    color: #fff;
+    font-size: 50px;
+    visibility: hidden;
+
+ }
+ nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    display: flex;
+    height: 50%;
+
+}
+nav ul{
+    display: flex;
+    margin: none;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    list-style: none;
+
+}
+nav ul li{
+    height: 100%;
+    color: #fff;
+    width: 100%;
+}
+
+
+
+
+.banner{
+    margin-top: 90px;
+    height: 30vh;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+h2{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+}
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    max-width: 1600px; 
+    height: 100%;
+    margin: auto;
+}
+.productoslist{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    max-width: 80vw; 
+    height: 100%;
+    margin: auto;
+
+}
+.card-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    flex-wrap: wrap;
+
+}
+.card{
+    margin: 25px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 240px;
+    height: 400px;
+    box-shadow: 2px 2px 13px -1px rgba(0,0,0,0.75);
+    
+}
+
+.card img{
+    margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 80%;
+}
+.card .titulo{
+    color: black;
+    font-weight: 500;
+    text-align: center;}
+.botones{
+    width: 100%;
+    height: 8%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.card button{
+    border: none;
+    margin: 5px;
+    background-color: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: rgb(99, 99, 99);
+}
+
+.categorias{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.categorias-conten{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 2px 2px 13px -1px rgba(0,0,0,0.50);
+    margin: 20px;
+}
+.categorias-conten img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    padding: 30px;
+
+
+    
+}
+.texto-circle{
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute
+    
+}
+@media screen and (max-width: 864px){
+.categorias-conten{ 
+    font-size: 10px;
+    max-width: 180px;
+    max-height: 180px;
+    margin: 20px;}
+.categorias-conten img{
+    padding: 15px;
+    width: 140px;
+    height: 140px;}
+.texto-circle{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute      
+        }
+        
+}
+.cat-art {
+    padding: 30px;
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+}
+
+.cat-art ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(0, 126, 245);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer-h4{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.nuestras-redes{
+width: 350px;
+height: 80%;
+}
+
+.nuestras-redes i{
+    font-size: 50px;
+    padding: 12px;
+}
+.consultas{
+width: 350px;
+height: 80%;
+
+}
+.consultas ul li, a{
+    list-style: none;
+    color: #fff;
+}
+.mediosdepago{
+width: 350px;
+height: 80%;
+
+}
+.mediosdepago img{
+    width: 350px;
+    height: 60%;
+}
+.selector{
+    margin-top: 120px;
+    height: 100%;
+    width: 1700px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.selector select{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid; 
+    border-color: rgb(185, 185, 185);
+    
+}
+
+.produtos button{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0, 126, 245);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.formulario {
+    margin: 0px;
+    padding: 0%;
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    margin-top: 120px;
+    background-color: rgb(0, 140, 255);
+    
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+    height: auto;
+
+}
+form input{
+    border: none;
+}
+form button{
+    margin: 10px;
+    padding: 10px;
+}
+.sobre-nosotros{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.sobre-nosotros img{
+    width: 100%;
+
+}
+
+.producto-compra{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+.producto-compra .caracteristica{
+    width: 800px;
+    height: 1200px;
+}
+.producto-compra .caracteristica h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.producto-compra .caracteristica p{
+    margin-top: 10px;
+
+}
+.producto-compra .caracteristica img{
+    width: 100%;
+    height: 70%;
+}
+.producto-compra .comprar{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-compra .comprar button{
+    background-color: blue;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+
+}
+@media screen and (max-width: 450px) { 
+   .{
+    padding: none;
+    margin: none;
+   }
+    nav {
+        margin: none;
+        justify-content: end;
+    }
+    nav ul{
+        padding: none;
+        margin: none;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 80vw;
+        height: 100vh;
+        right: -390px;
+        transition: 0.2s;
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul li{
+        text-align: end;
+    }
+    .fa-bars{
+        margin: none;
+        display: flex;
+        visibility: visible;
+     }
+
+     .fa-bars:hover + ul {
+        right: 0px;
+     }
+    nav ul:hover{
+        right: 0px;
+    }
+    .categorias-conten{ 
+        max-width: 130px;
+        max-height: 130px;
+        margin: 5px;}
+    .categorias-conten img{
+        padding: 8px;
+        width: 90px;
+        height: 90px;}
+
+    .texto-circle{
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute      
+            }
+    
+
+    h2{
+       font-size: 26px;
+       padding: 5px;
+            }
+
+    
+
+    .card{
+   
+        margin: 8px;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        width: 170px;
+        height: 270px;
+        box-shadow: 2px 2px 13px -1px rgba(0,0,0,0.75);
+        
+    }
+}
