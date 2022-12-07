@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.rootIsWorkspace": null,
+    "liveSassCompile.settings.showAnnouncements": null,
+    "liveSassCompile.settings.includeItems": [
+    
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.autoprefix": [
+    
+    ]
+}
