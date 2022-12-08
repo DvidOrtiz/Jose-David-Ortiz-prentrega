@@ -1,4 +1,13 @@
 
+.card-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    transition: 1s;
+}
+
+
 .card{
     margin: 25px;
     border-radius: 15px;
@@ -24,15 +33,17 @@
             align-items: center;
             display: flex;
             justify-content: space-around;
+
+            button{
+                border: none;
+                margin: 5px;
+                background-color: rgba(0, 0, 0, 0);
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                color: rgb(99, 99, 99);
+            }
         }
-        .card button{
-            border: none;
-            margin: 5px;
-            background-color: rgb(255, 255, 255);
-            font-family: 'Poppins', sans-serif;
-            font-size: 10px;
-            color: rgb(99, 99, 99);
-        }
+      
 
         @media screen and (max-width: 560px) { 
  
@@ -45,7 +56,7 @@
                 box-shadow: 2px 2px 13px -1px rgba(0,0,0,0.75);
                 
             }
-            .card .titulo{
+            .titulo{
                 color: black;
                 font-size: 14px;
                 text-align: center;}
@@ -57,13 +68,12 @@
         
         }
 
-        .card:hover{
-  
-            transform: scale(1.1);
-            box-shadow: 2px 2px 13px -1px rgba(10, 125, 255, 0.75);
-        }
 }
 
-
+.card:hover{
+  
+    transform: scale(1.1);
+    box-shadow: 2px 2px 13px -1px rgba(10, 125, 255, 0.75);
+}
 
 
