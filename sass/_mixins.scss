@@ -1,0 +1,22 @@
+@use 'variables';
+
+@mixin boton{
+    color: #fff;
+    background-color: variables.$color1;
+    border: none;
+    transition: 0.2s;
+
+    &:hover{
+        background-color: #fff;
+        color: variables.$color3;
+        border: solid;
+        border-color: variables.$color3;
+    }
+}
+
+@mixin sombra{
+    box-shadow: 2px 2px 13px -1px rgba(0,0,0,0.75);
+    &:hover{
+        box-shadow: 2px 2px 13px -1px rgba(10, 125, 255, 0.75);
+    }
+}

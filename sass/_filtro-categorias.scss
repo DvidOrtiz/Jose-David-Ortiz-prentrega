@@ -1,0 +1,17 @@
+@use'variables';
+
+.categoria-filtro{ 
+    grid-area:filtro1;
+    width: 60%;
+    height: 200px;
+    p{
+        background-color: variables.$color1;
+        text-align: center;
+        color: variables.$color2;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        margin-bottom: 0;
+    }
+
+    
+}

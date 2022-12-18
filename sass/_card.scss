@@ -1,0 +1,113 @@
+@use 'variables';
+@use 'mixins';
+
+.card-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+
+.card{
+    margin: 25px;
+    border-radius: 15px;
+    background-color: variables.$color2;
+    width: 200px;
+    height: 320px;
+    @include mixins.sombra;
+    transition: transform .2s;
+
+    &:hover{
+        transform: scale(1.1);
+
+    }
+        .titulo{
+            margin: none;
+            padding: none;
+            width: 100%;
+            border-top: solid 1px;
+            border-color: rgb(143, 143, 143);
+            color: variables.$color3;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        img{
+            margin: none;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            height: 80%;
+
+        }
+        .botones{
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+
+            button{
+                width: 45%;
+                height: 100%;
+                border: none;    
+                border-radius: 15px;
+                background-color: rgba(0, 0, 0, 0);
+                font-size: 15px;
+                font-weight: 700;
+                color: variables.$color4;
+                &:hover{
+                    color: variables.$color2;
+                    background-color: variables.$color1;
+                }
+            }
+        
+
+        }
+      
+
+
+}
+
+@media screen and (max-width: 560px) { 
+ 
+    .card{
+        margin: 10px;
+        width: 170px;
+        height: 270px;
+        .titulo{
+        font-size: 15px;
+            }
+        
+    }
+  
+        
+    .producto-compra .titulo h1{
+       text-align: start;
+       font-size: 40px;
+        }
+
+}
+
+@media screen and (max-width: 400px) { 
+ 
+    .card{
+        margin: 10px;
+        width: 120px;
+        height: 210px;
+        .titulo{
+        font-size: 15px;
+            }
+            .botones{    
+                button{
+                font-size: 8px;
+            }
+        }
+    }
+  
+    
+
+}
+
+
+

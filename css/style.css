@@ -1,0 +1,413 @@
+.grid-area-productos .boton-mas {
+  grid-area: button;
+  justify-self: center;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #0139E6;
+  border: none;
+  transition: 0.2s;
+}
+.grid-area-productos .boton-mas:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-color: rgb(0, 0, 0);
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 25px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 320px;
+  box-shadow: 2px 2px 13px -1px rgba(0, 0, 0, 0.75);
+  transition: transform 0.2s;
+}
+.card:hover {
+  box-shadow: 2px 2px 13px -1px rgba(10, 125, 255, 0.75);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .titulo {
+  margin: none;
+  padding: none;
+  width: 100%;
+  border-top: solid 1px;
+  border-color: rgb(143, 143, 143);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+.card img {
+  margin: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 80%;
+}
+.card .botones {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.card .botones button {
+  width: 45%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+.card .botones button:hover {
+  color: rgb(255, 255, 255);
+  background-color: #0139E6;
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    margin: 10px;
+    width: 170px;
+    height: 270px;
+  }
+  .card .titulo {
+    font-size: 15px;
+  }
+  .producto-compra .titulo h1 {
+    text-align: start;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    margin: 10px;
+    width: 120px;
+    height: 210px;
+  }
+  .card .titulo {
+    font-size: 15px;
+  }
+  .card .botones button {
+    font-size: 8px;
+  }
+}
+.categorias {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.categorias .categorias-conten {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 13px -1px rgba(0, 0, 0, 0.75);
+  margin: 20px;
+  transition: 0.5s;
+}
+.categorias .categorias-conten:hover {
+  box-shadow: 2px 2px 13px -1px rgba(10, 125, 255, 0.75);
+}
+.categorias .categorias-conten img {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 210px;
+  border-radius: 100%;
+}
+.categorias .categorias-conten .texto-circle {
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 5;
+  color: rgba(255, 255, 255, 0.7);
+}
+.categorias .categorias-conten .texto-circle:hover {
+  color: rgba(10, 125, 255, 0.75);
+}
+@media screen and (max-width: 864px) {
+  .categorias .categorias-conten {
+    max-width: 210px;
+    max-height: 210px;
+    margin: 10px;
+  }
+  .categorias .categorias-conten .texto-circle {
+    font-size: 38px;
+  }
+  .categorias .categorias-conten img {
+    padding: 15px;
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .categorias .categorias-conten {
+    max-width: 180px;
+    max-height: 180px;
+    margin: 3px;
+  }
+  .categorias .categorias-conten .texto-circle {
+    font-size: 29px;
+  }
+  .categorias .categorias-conten img {
+    padding: 12px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.producto-compra {
+  padding: 20px;
+  width: 1200px;
+  height: min-content;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: max-content 12%;
+  grid-template-areas: "titulo titulo" "imagen info" "imagen info" "descripcion descripcion";
+  align-content: space-between;
+  justify-content: space-around;
+}
+.producto-compra .descripcion {
+  width: 80%;
+  margin-top: 5%;
+  grid-area: descripcion;
+}
+.producto-compra .info {
+  grid-area: info;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.producto-compra .info h2 {
+  padding: 10px;
+  font-size: 100;
+  font-weight: bold;
+}
+.producto-compra .info i {
+  color: #0139E6;
+}
+.producto-compra .info a {
+  text-decoration: none;
+  color: #0139E6;
+  transition: 0.2s;
+}
+.producto-compra .info a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.producto-compra .titulop {
+  grid-area: titulo;
+}
+.producto-compra .titulop h1 {
+  text-align: start;
+  font-size: 60px;
+  font-weight: 0;
+}
+.producto-compra .envio {
+  grid-area: envio;
+}
+.producto-compra img {
+  width: 480px;
+  height: 720px;
+  grid-area: imagen;
+}
+.producto-compra .comprar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.producto-compra .comprar button {
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  width: 180px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #0139E6;
+  border: none;
+  transition: 0.2s;
+}
+.producto-compra .comprar button:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-color: rgb(0, 0, 0);
+}
+.producto-compra .comprar select {
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1079px) {
+  .producto-compra {
+    width: 100vw;
+    padding: 0%;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo titulo" "imagen imagen" "info info" "descripcion descripcion";
+  }
+  .producto-compra img {
+    grid-area: imagen;
+    width: 100%;
+    height: 100%;
+  }
+  .producto-compra .info {
+    grid-area: info;
+    height: auto;
+    background-color: #fff;
+    width: 100%;
+  }
+  .producto-compra .titulop {
+    grid-area: titulo;
+  }
+  .producto-compra .titulop h1 {
+    text-align: start;
+    font-size: 50px;
+  }
+}
+.categoria-filtro {
+  grid-area: filtro1;
+  width: 60%;
+  height: 200px;
+}
+.categoria-filtro p {
+  background-color: #0139E6;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-bottom: 0;
+}
+
+.grid-area-productos {
+  margin: auto;
+  margin-top: 25px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25%;
+  grid-template-areas: "selector selector" "filtro1  productos" "filtro1 button";
+}
+.grid-area-productos .productoslist {
+  display: flex;
+  grid-area: productos;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  transition: 1s;
+}
+
+@media screen and (max-width: 864px) {
+  .grid-area-productos {
+    margin: auto;
+    margin-top: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0%;
+    grid-template-areas: "selector selector" "prodcutos  productos" "filtro1 button";
+  }
+  .grid-area-productos .categoria-filtro {
+    visibility: hidden;
+    justify-self: center;
+    grid-area: filtro1;
+  }
+}
+.selector {
+  grid-area: selector;
+  display: flex;
+  justify-content: flex-end;
+}
+.selector select {
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: rgb(185, 185, 185);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  transition: 0.2s;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px;
+  font-size: 50px;
+}
+
+.inicio-producto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 560px) {
+  h2 {
+    font-size: 26px;
+    padding: 5px;
+  }
+}
+.fa-paper-plane-top {
+  color: #fff;
+  font-size: 40px;
+  z-index: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
